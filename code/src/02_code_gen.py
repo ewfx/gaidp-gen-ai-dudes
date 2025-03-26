@@ -2,26 +2,42 @@ import pandas as pd
 import openai
 
 # Set OpenAI API key
-openai.api_key = "your-api-key"
+openai.api_key = "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"
 
 # Load customer dataset
-data = pd.DataFrame({
-    "Customer_ID": [1001, 1002, 1003, 1004],
-    "Account_Balance": [15000, 32000, -5000, 70000],
-    "Transaction_Amount": [500, 1200, 300, 2000],
-    "Reported_Amount": [500, 1200, 300, 1800],
-    "Currency": ["USD", "EUR", "GBP", "USD"],
-    "Country": ["US", "DE", "UK", "US"],
-    "Transaction_Date": ["2025-02-25", "2025-02-20", "2025-02-18", "2025-02-28"],
-    "Risk_Score": [3, 2, 6, 5],
-})
+# data = pd.DataFrame({
+#     "Customer_ID": [1001, 1002, 1003, 1004],
+#     "Account_Balance": [15000, 32000, -5000, 70000],
+#     "Transaction_Amount": [500, 1200, 300, 2000],
+#     "Reported_Amount": [500, 1200, 300, 1800],
+#     "Currency": ["USD", "EUR", "GBP", "USD"],
+#     "Country": ["US", "DE", "UK", "US"],
+#     "Transaction_Date": ["2025-02-25", "2025-02-20", "2025-02-18", "2025-02-28"],
+#     "Risk_Score": [3, 2, 6, 5],
+# })
+
+data = pd.read_csv("customer.csv")
 
 # Display the dataset
 print("Dataset Preview:")
 print(data)
 
 # Input validation instructions
-instructions = input("Enter validation instructions (e.g., 'Risk_Score > 3 and Account_Balance > 0'): ")
+#instructions = input("Enter validation instructions (e.g., 'Risk_Score > 3 and Account_Balance > 0'): ")
+print("Enter your instructions (type 'END' to finish):")
+
+# Initialize an empty string to store multiline input
+instructions = ""
+
+while True:
+    line = input()  # Take one line of input at a time
+    if line.strip() == "END":  # Stop the loop if 'END' is entered
+        break
+    instructions += " " + line  # Append the line to the instructions string
+
+print("\nYour Instructions:")
+print(instructions)
+print("Please wait while I am processing ....")
 
 # Use OpenAI API to generate the validation code
 def generate_validation_code(instructions):
