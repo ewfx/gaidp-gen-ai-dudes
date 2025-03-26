@@ -2,7 +2,7 @@ import pandas as pd
 import openai
 
 # Set OpenAI API key
-openai.api_key = "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"
+openai.api_key = "your-api-key"
 
 # Load customer dataset
 data = pd.DataFrame({
