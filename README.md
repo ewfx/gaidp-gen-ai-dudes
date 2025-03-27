@@ -1,6 +1,7 @@
-# 🚀 Project Name
+# 🚀 Project Name - Gen AI-Based Data profiling challenge
 
 ## 📌 Table of Contents
+- [Team](#team)
 - [Introduction](#introduction)
 - [Demo](#demo)
 - [Inspiration](#inspiration)
@@ -9,12 +10,14 @@
 - [Challenges We Faced](#challenges-we-faced)
 - [How to Run](#how-to-run)
 - [Tech Stack](#tech-stack)
-- [Team](#team)
 
 ---
+## 👥 Team
+- Managers - M Kumaraswamy, Santosh Sutar
+- Team members - Rahul Sur, Sandeep Amin, Anil BL
 
 ## 🎯 Introduction
-A brief overview of your project and its purpose. Mention which problem statement are your attempting to solve. Keep it concise and engaging.
+In banking domain involves manually defining profiling rules based on the underlying data and regulatory requirements. This challenge aims to automate data profiling using Generative AI (LLMs) and unsupervised machine learning techniques. We have developed a solution that can generate data profiling rules, perform adaptive risk scoring, and suggest remediation actions.
 
 ## 🎥 Demo
 🔗 [Live Demo](#) (if applicable)  
@@ -50,11 +53,7 @@ Describe the major technical or non-technical challenges your team encountered.
    ```
 
 ## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
-
-## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- 🔹 Frontend: N/A
+- 🔹 Backend: Python - run in mini conda prompt
+- 🔹 Database: N/A
+- 🔹 Other: OpenAI API (LLM)
