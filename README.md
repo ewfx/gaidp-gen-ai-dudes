@@ -41,11 +41,11 @@ Describe the major technical or non-technical challenges your team encountered.
 ## 🏃 How to Run
 1. Clone the repository  
    ```sh
-   git clone https://github.com/your-repo.git
+   git clone -b main https://github.com/ewfx/gaidp-gen-ai-dudes.git
    ```
 2. Install dependencies  
    ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
+   pip3 install openapi pandas
    ```
 3. Run the project  
    ```sh
