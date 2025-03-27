@@ -1,6 +1,7 @@
-## Delete this file
+## Steps
 
-Instead place your source files here
+Managers - M Kumaraswamy, Santosh Sutar
+Team members - Rahul Sur, Sandeep Amin, Anil BL
 
 1. Input files = customer.csv and 01_instructions_prompt.txt
 2. Run the 02_code_gen.py on command prompt. It will prompt to enter the above instructions.
